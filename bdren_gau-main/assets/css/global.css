@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+/* body font  */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+.react-header .topbar-area.style1 ul.social-links li a:hover {
+  color: #0ea315;
+}
+
+
+.learn-more-btn {
+  background-color: #2a7d2e;
+  color: white;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #318447;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0;
+}
+
+.learn-more-btn:hover::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+
+.learn-more-btn:hover {
+  color: #318447;
+  border: 1px solid #318447;
+  transform: scale(1.05);
+}
+
+
+.menu-toggle #menu-btn {
+  background: #318447;
+  border-color: #318447;
+}
+
+/* Sub Navigation */
+.sub-nav {
+  background-color: #318447;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.sub-nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.sub-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+}
+.sub-nav a:hover {
+  color: #ebc105;
+}
+
+.sub-nav a:last-child {
+  border-right: none;
+}
+
+
+
+/* Breadcrumb */
+.breadcrumb-section {
+  background-color: #fff;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.breadcrumb-container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  background-color: #ddd;
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb-item:not(:last-child):after {
+  content: "›";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+
+
+.react-header .react-menus li a {
+  color: #ffffff;
+}
+.react-header .react-menus li a:hover {
+  color: #ebc105;
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "");
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .dean-info h4 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  .react-header .react-menus li a {
+    color: #0c0c0c;
+  }
+}

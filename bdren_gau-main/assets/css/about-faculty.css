@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+/* body font  */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Faculty Banner Section */
+.faculty-banner {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.banner-text {
+  padding: 20px;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-text h2 {
+  color: #2a7d2e;
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.learn-more-btn {
+  background-color: #2a7d2e;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: ease-in-out 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #318447;
+}
+
+
+/* Breadcrumb */
+.breadcrumb-section {
+  background-color: #fff;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.breadcrumb-container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  background-color: #ddd;
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb-item:not(:last-child):after {
+  content: "›";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+/* Add these styles to your about-faculty.css file */
+
+.achievements {
+  background-color: #343a40;
+  color: white;
+  padding: 100x 0;
+}
+
+.achievements h2 {
+  font-weight: 600;
+  padding-bottom: 30px;
+  color: #fff;
+
+}
+
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 220px;
+  transition: all 0.4s ease;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.achievement-card:hover img {
+  transform: scale(1.1);
+}
+
+.achievement-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.card-text {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* carousel  */
+
+.faculty-section {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.faculty-carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.faculty-item {
+  flex: 0 0 calc(33.333% - 30px);
+  margin: 0 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.faculty-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.faculty-name {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .faculty-item {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .achievement-card {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+  .faculty-item {
+    flex: 0 0 calc(100% - 30px);
+  }
+
+  .faculty-img {
+    height: 200px;
+  }
+}

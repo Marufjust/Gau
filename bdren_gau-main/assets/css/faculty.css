@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+/* body font  */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* Faculty Banner Section */
+.faculty-banner {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.banner-text {
+  padding: 20px;
+  color: #333;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-text h2 {
+  color: #2a7d2e;
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.learn-more-btn {
+  background-color: #2a7d2e;
+  color: white;
+  border: 1px solid transparent; /* 🛠 prevents layout shift */
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+
+.learn-more-btn:hover {
+  background-color: transparent;
+  color: #318447;
+  border: 1px solid #318447;
+}
+
+.menu-toggle #menu-btn {
+  background: #318447;
+  border-color: #318447;
+}
+
+/* Sub Navigation */
+.sub-nav {
+  background-color: #318447;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.sub-nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.sub-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+}
+
+.sub-nav a:last-child {
+  border-right: none;
+}
+
+
+
+/* Breadcrumb */
+.breadcrumb-section {
+  background-color: #fff;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.breadcrumb-container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  background-color: #ddd;
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb-item:not(:last-child):after {
+  content: "›";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* Dean Section */
+.dean-section {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+
+.dean-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  position: relative;
+}
+
+.dean-section h3:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #318447;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dean-card {
+  border: none;
+  background-color: #318447;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dean-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dean-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dean-info {
+  background-color: #318447;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.dean-info h4 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.dean-info p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.dean-contact i {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.dean-social a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Staff Section */
+.staff-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+/* Staff Card Styling */
+.staff-card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* On hover, slightly move and elevate the card */
+.staff-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.staff-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Card Body */
+.staff-card .card-body {
+  padding: 20px;
+  background-color: #318447;
+  color: white;
+}
+
+/* Card Title and Subtitle */
+.staff-card .card-title {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.staff-card .card-subtitle {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Contact Info */
+.staff-contact {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.staff-contact i {
+  width: 18px;
+  margin-right: 6px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Academic Affairs */
+.academic-affairs {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.academic-affairs h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.academic-affairs p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Academic Affairs Office */
+.academic-affairs {
+  background-color: #e9eef0;
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 30px;
+  border-left: 4px solid #4a90e2;
+}
+
+.academic-affairs h5 {
+  color: #4a90e2;
+  margin-bottom: 5px;
+}
+
+.academic-affairs p {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .dean-info h4 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+ 
+}
+
+
+

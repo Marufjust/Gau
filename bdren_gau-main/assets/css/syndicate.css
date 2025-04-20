@@ -1,0 +1,55 @@
+
+.syndicate-section {
+  background-color: #fff;
+  padding: 40px 15px;
+}
+.breadcrumb em a{
+color: black;
+}
+.syndicate-section .breadcrumb em span {
+  color: #ffc107;
+  text-decoration: none;
+}
+.syndicate-section .breadcrumb em a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.syndicate-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensures table doesn't shrink too much */
+}
+
+.syndicate-table th {
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+}
+
+.syndicate-table th,
+.syndicate-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.officePhone,
+.resPhone {
+  text-align: center;
+}
+
+/* Optional: Adjust font size on smaller screens */
+@media (max-width: 768px) {
+  .syndicate-table th,
+  .syndicate-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
