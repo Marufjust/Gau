@@ -12,6 +12,7 @@ body {
 .profile-image {
     text-align: center;
     padding: 20px;
+    height: 300px;
 }
 
 .profile-image img {
@@ -31,9 +32,9 @@ body {
     font-size: 1.1rem;
 }
 
-.qualification {
+/* .qualification {
     margin-bottom: 20px;
-}
+} */
 
 .social-icons a {
     margin-right: 15px;

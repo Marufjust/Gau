@@ -1,20 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+.faculty-profile {
+  padding: 50px 0;
+}
+.green{
+  color: green;
+}
+tr{
+  color: black;
+  font-weight: 500;
+}
+
+
+.profile-image {
+  text-align: center;
+  padding: 20px;
+  height: 300px;
+}
+
+.profile-image img {
+  max-width: 250px;
+  border: 1px solid #ddd;
+}
+
+.profile-info h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.designation {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
 
 .syndicate-section {
   background-color: #fff;
-  padding: 40px 15px;
+  color: #b0b0b0;
+  font-family: Arial, sans-serif;
 }
-.breadcrumb em a{
-color: black;
+
+.breadcrumb em a {
+  color: black;
 }
+
 .syndicate-section .breadcrumb em span {
-  color: #ffc107;
+  /* color: #ffc107; */
   text-decoration: none;
 }
+
 .syndicate-section .breadcrumb em a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Table Wrapper */
 .table-responsive {
   width: 100%;
   overflow-x: auto;
@@ -23,21 +62,51 @@ color: black;
 
 .syndicate-table {
   width: 100%;
+  min-width: 700px;
   border-collapse: collapse;
-  min-width: 600px; /* Ensures table doesn't shrink too much */
+  background-color: #fff;
+  font-size: 14px;
+  border: 2px solid #b0b0b0; 
 }
 
 .syndicate-table th {
-  background-color: #f2f2f2;
-  color: black;
+
+  border: 2px solid #b0b0b0; 
   text-align: center;
+  padding: 16px;
+  white-space: nowrap;
 }
 
-.syndicate-table th,
+
 .syndicate-table td {
-  padding: 12px;
-  border: 1px solid #dee2e6;
+  border: 2px solid #b0b0b0; 
+  padding: 16px;
   vertical-align: top;
+  text-align: center;
+  color: 2px solid #b0b0b0;
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.syndicate-table td:nth-child(2) {
+  text-align: left;
+}
+
+.syndicate-table th:nth-child(2) {
+  text-align: center;
+}
+.syndicate-table thead th {
+  border-bottom: 2px solid #b0b0b0;
+}
+
+.member-photo {
+  width: 80px;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 .officePhone,
@@ -45,11 +114,55 @@ color: black;
   text-align: center;
 }
 
-/* Optional: Adjust font size on smaller screens */
+@media (max-width: 1024px) {
+  .syndicate-table {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .syndicate-section {
+    padding: 30px 10px;
+  }
+
+  .syndicate-table {
+    min-width: 600px;
+    font-size: 14px;
+  }
+
   .syndicate-table th,
   .syndicate-table td {
-    font-size: 14px;
+    padding: 10px;
+  }
+
+  .member-photo {
+    width: 70px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .syndicate-table {
+    font-size: 13px;
+  }
+
+  .syndicate-table th,
+  .syndicate-table td {
     padding: 8px;
+  }
+
+  .member-photo {
+    width: 60px;
+    height: 70px;
+  }
+
+  .profile-info {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 752px) {
+  .profile-info {
+    padding-top: 25px;
   }
 }
